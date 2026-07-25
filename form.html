@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >Student Registration Form</title>
+</head>
+<body>
+
+<h1 align = "center">Student Registration Form</h1>
+
+<h3></h3>
+
+<form>
+
+    <fieldset>
+        
+       <legend align="center">Personal Information</legend>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="Enter your full name"
+               maxlength="30" required>
+        (Maximum 30 characters only)
+        <br><br>
+
+        <label >Register Number:</label><br>
+        <input type="text"
+               placeholder="URK24CS1024"
+               pattern="URK[0-9]{2}CS[0-9]{4}"
+               required>
+        (use pattern for matching regno URK24CS1024 format)
+        <br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="sample@gmail.com"
+               required>
+        <br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="************"
+               required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number"
+               id="age"
+               name="age"
+               min="17"
+               max="21"
+               required>
+        (minimum 17 & maximum 21)
+        <br><br>
+
+        <label for="time">Preferred Time:</label><br>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend align = "center">Academic Information</legend>
+
+        <label for="department">Department:</label><br>
+        <select id="department" name="department" required>
+            <option value="">--Select Department--</option>
+            <option>Computer Science and Engineering</option>
+            <option>Information Technology</option>
+            <option>Artificial Intelligence</option>
+            <option>Electronics and Communication</option>
+            <option>Mechanical Engineering</option>
+        </select>
+
+        <br><br>
+
+        <label>Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label>Skills:</label><br>
+
+        <input type="checkbox" id="html" checked>
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+
+        <input type="checkbox" id="python">
+        <label for="python">Python</label>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend align = "center">Additional Information</legend>
+
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+
+        <label for="portfolio">Portfolio Website:</label><br>
+        <input type="url"
+               id="portfolio"
+               name="portfolio"
+               placeholder="https://example.com">
+        <br><br>
+
+        <label for="color">Favorite Color:</label><br>
+        <input type="color" id="color" name="color">
+
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
